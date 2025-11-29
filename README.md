@@ -21,12 +21,6 @@ A fully functional RESTful e-commerce API built with Flask, SQLAlchemy, Marshmal
 - **Serialization**: Marshmallow
 - **Database Connection**: MySQL Connector
 
-## Prerequisites
-
-- Python 3.8+
-- MySQL Server
-- MySQL Workbench (optional, for database management)
-
 ## Setup Instructions
 
 ### 1. Create MySQL Database
@@ -213,17 +207,6 @@ The API includes comprehensive error handling:
 - 400: Bad request (validation errors, duplicates)
 - 500: Server errors
 
-## Features Implemented
-
-✅ One-to-Many relationship (Users → Orders)  
-✅ Many-to-Many relationship (Orders ↔ Products)  
-✅ Association table with duplicate prevention  
-✅ Marshmallow schemas with validation  
-✅ Foreign key support in schemas (`include_fk = True`)  
-✅ Full CRUD operations for all entities  
-✅ DateTime handling for order dates  
-✅ Email uniqueness validation  
-✅ Cascade delete for user orders  
 
 ## Common Issues and Solutions
 
@@ -236,12 +219,3 @@ The API includes comprehensive error handling:
 ### Issue: Foreign key constraint fails
 **Solution**: Ensure referenced records (users, products) exist before creating relationships
 
-## Author
-
-Lasia  
-UC Santa Cruz - Technology and Information Management  
-Contact: [Your Email]
-
-## License
-
-This project is part of the Coding Temple Software Engineering Bootcamp curriculum.
